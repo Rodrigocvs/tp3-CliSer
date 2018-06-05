@@ -11,3 +11,15 @@ module.exports = app => {
     });
     });
 }
+app.post('/news', (req, res) => {
+    const { title,NEW } = req.body;
+    connection.query('INSERT INTO new SET ? ',
+      {
+        title,
+        NEW
+      }
+    , (err, result) => {
+      res.redirect('/news');
+    });
+  });
+};
