@@ -24,7 +24,12 @@
                     <th>NEWS</th>
                 </tr>
 
-              %= news %>
+
+
+                <s for (var i=0; i < news.length; i++) { %>
+                    <tr>
+                        <td> <s= news[i].id_news %> </s></td>
+                    </tr> 
            
 
             </table>

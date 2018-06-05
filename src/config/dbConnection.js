@@ -1,4 +1,4 @@
-const myswl = require ('mysql');
+const mysql = require ('mysql');
 
 module.exports = () => {
     return mysql.createConnection({
